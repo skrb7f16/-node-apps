@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title The best Dancing Academy
+        style
+            include ../static/style.css
+    body
+        nav#navBar
+            ul  
+                div#logo 
+                    img(src="../static/logo.png", alt="")
+                    h3 SDA
+                li #[a(href="/")  Home]
+                li #[a(href="/")  About]
+                li #[a(href="/")  Services]
+                li #[a(href="/contact")  Contact us]
+                li #[a(href="/")  Class info]
+        
+        div.contact-body
+            h1 Contact Us
+            form(action="/contact", method="post" class="form-group")
+                input(type="text" name="name" placeholder="ENter Your name")
+                input(type="text" name="phone" placeholder="Ennter Your Phone no")
+                input(type="email" name="email" placeholder="enter your Email")
+                textarea(cols="20", rows="10" name="message" placeholder="Enter your message")
+                button.btn
+                    |Submit
+
+
+        section#footer
+            | CopyRight ShashankDanceAcademy | All Rights Reserved 

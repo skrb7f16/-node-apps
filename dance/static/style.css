@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Yeon+Sung&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#navBar{
+    background-color:rgb(75, 3, 3);
+    padding: 13px 4px;
+    width: 100%;
+}
+
+#navBar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+#logo img{
+    height: 50px;
+    margin-top: 0;
+    filter: invert(1);
+}
+
+#navBar li {
+    list-style: none;
+}
+
+#navBar li a{
+    text-decoration: none;
+    padding: 7px 30px;
+    font-family: 'Lacquer', cursive;
+    font-size: 25px;
+    color: white;
+
+}
+#navBar li a:hover{
+    color: grey;
+}
+#intro{
+    height: 400px;
+    background:url(/static/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+#intro div.small{
+    font-size: 30px;
+    margin-top: .5%;
+
+}
+#mission{
+    height: 300px;
+    font-family: 'Yeon Sung', cursive;
+    
+
+}
+
+#mission h1{
+    text-align: center;
+    padding-top: 12px;
+}
+#mission div.container{
+    display: flex;
+
+}
+
+.card {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 20px;
+    height: 210px;
+}
+.card h2{
+    text-align: center;
+    margin: 12px;
+
+}
+.card-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-img{
+    height: 131px;
+}
+
+.card-img img{
+    height: inherit;
+}
+#sponsor{
+    height: 400px;
+    text-align: center;
+    background-color: rgb(238, 153, 153);
+    padding-top: 1%;
+    /* align-items: center; */
+}
+
+#sponsor .img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img img{
+    margin: 2%;
+}
+#footer{
+    height: 60px;
+    background-color:black;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*The contact Form Page*/
+
+.contact-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.contact-body .form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.form-group input,textarea{
+    width: 60%;
+    padding: 1%;
+    margin: .5%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 18px;
+}
+.btn{
+    font-size: 20px;
+    padding: 0.4% 1%;
+    border: 2px solid;
+    border-radius: 6px;
+    outline: none;
+    background-color: brown;
+    color: white;
+}
